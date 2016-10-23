@@ -57,7 +57,7 @@ int main(void){
     if(t == test_str_length)
         printf("Return value correct.\n");
 
-    if(vq->length == test_str_length)
+    if(vq_zcr_start(vq,NULL) == test_str_length)
         printf("Length set correctly.\n");
 
     if(memcmp(vq->_buffer_start, test_str, test_str_length) == 0)
